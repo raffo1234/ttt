@@ -73,9 +73,13 @@ end
 game1 = Game.new
 
 # Set name of players
-game1.set_player 
+number_of_players = 2
+(1..number_of_players).to_a.each do
+  game1.set_player  
+end
 
 game1.start
 
 # Loop until finding a winner
+
 game1.play_next("X")
